@@ -1,0 +1,2 @@
+# scaffold
+Azure python project

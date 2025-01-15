@@ -14,10 +14,14 @@ jobs:
       with:
         python-version: "3.9.21"
         
-    - name: Install 
+    - name: Install dependencies
       run: |
-        pip install black
+        make install-azure
    
     - name: Lint
       run: | 
-        black . --check
+        make lint
+        
+    - name: Test
+      run: | 
+        make test

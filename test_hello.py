@@ -1,19 +1,3 @@
-# YAML 
-
-# GitHub Actions Workflow YAML
-
-name: CI
-on: [push]
-
-jobs:
-
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-    
-    - uses: actions/checkout@v3
-    
-    - name: Set up Python  
-      uses: actions/setup-python@v3 
-      with:
-        python-version: "3.9"
+from hello import add
+  def test_add():
+    assert add(1,2)==3
